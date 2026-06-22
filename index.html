@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>Expense Tracker</h1>
+    <h1><i class="fa-solid fa-clipboard-list"></i>Expense Tracker</h1>
 
     <div class="input">
         <input type="text" class="product-name" placeholder="Expense Name">
         <input type="number" class="amount" placeholder="Amount">
 
         <select id="category" class="type">
-            <option selected disabled>Select Category</option>
+            <option value="" selected disabled>Select Category</option>
             <option value="Bills">Bills</option>
             <option value="Food">Food</option>
             <option value="Travel">Travel</option>
-            <option value="Personal Interest">Personal Interest</option>
+            <option value="Personal ">Personal</option>
             <option value="Other">Other</option>
         </select>
 
@@ -30,6 +31,7 @@
             <p>Expense Name</p>
             <p>Category</p>
             <p>Price</p>
+            <p>Action</p>
         </div>
         
     </div>
