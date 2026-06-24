@@ -5,6 +5,7 @@ const amount = document.querySelector(".amount");
 const category = document.querySelector(".type");
 const addbtn = document.querySelector(".add");
 const table = document.querySelector(".table");
+const total = document.querySelector(".total-amount");
 
 function elements() {
     document.querySelectorAll(".row").forEach(row => row.remove());
@@ -27,6 +28,9 @@ function elements() {
         table.appendChild(row)
         row.classList.add("row" ,"flex");
     });
+
+    const totalamount = all.reduce((sum, item) => sum + item.amount,0);
+    total.innerText = `${totalamount} Rupee`
 
     product.value = "";
     amount.value = "";

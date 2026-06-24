@@ -80,3 +80,20 @@ h1{
     color: white;
     cursor: pointer;
 }
+
+.total{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 480px 80px;
+    border: 1px solid black;
+}
+
+.total div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;
+    text-align: center;
+    height: 40px ;
+}    
+
